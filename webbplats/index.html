@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Utforska Ineos Grenadier. En kompromisslös, terränggående 4x4-ikon byggd för äventyr, hållbarhet och prestanda i tuff terräng."
+    />
+    <title>Ineos Grenadier - Byggd för extrema utmaningar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/logo.png"
+          alt="Grenadier logotyp"
+          class="centrerad-bild"
+        />
+      </a>
+    </header>
+
+    <main>
+      <!-- Hero-sektion med bild, knappar och rubrik -->
+      <section class="hero-container">
+        <!-- Navigeringsknappar högst upp i bilden -->
+        <nav class="hero-nav">
+          <a href="#om" class="nav-btn">Om bilen</a>
+          <a href="https://ineosgrenadier.com/en/se/" class="nav-btn"
+            >Specifikationer</a
+          >
+          <a href="#kontakt" class="nav-btn btn-kontakt btn-blink">
+            Boka provkörning</a
+          >
+        </nav>
+        <!-- Centrerad text mitt på bilden -->
+        <div class="hero-content">
+          <h1>Defending history</h1>
+        </div>
+      </section>
+
+      <!-- Om-sektionen -->
+      <section id="om" class="content-section">
+        <h2>Om Ineos Grenadier</h2>
+        <p>
+          Det finns fordon som tar dig från punkt A till punkt B. Och så finns
+          det Ineos Grenadier – skapad för dig som vägrar låta vägen sätta
+          gränserna. Med klassisk, kompromisslös design, en robust stege-ram i
+          stål och permanent fyrhjulsdrift är Grenadier byggd för att bemästra
+          världens mest krävande terräng. Oavsett om du söker nästa stora
+          äventyr, behöver en outtröttlig arbetshäst i tuff miljö eller bara
+          vill ha en 4x4-ikon med ren körglädje, levererar Grenadier när andra
+          backar undan. Varje detalj är genomtänkt för funktion och maximal
+          tillförlitlighet utan onödigt prål. Med kraftfulla 3.0-liters
+          sexcylindriga motorer från BMW och en smidig 8-stegad automatväxellåda
+          tar du dig an branta stigningar, djup snö och hård lera med
+          fullständig kontroll. Den oömma interiören är utformad för att tåla
+          stryk och enkla analoga reglage gör att du behåller precisionen även
+          med tunga arbetshandskar på. Grenadier handlar inte bara om att nå
+          fram – den handlar om friheten att välja din egen väg, oavsett hur
+          obanad den är.
+        </p>
+      </section>
+
+      <!-- Flexbox-sektion med tre kort -->
+      <!-- Flexbox-sektion med tre kort -->
+      <section id="specifikationer" class="card-container">
+        <!-- Kort 1: Inredning -->
+        <div class="card">
+          <a href="artikel.html?id=inredning">
+            <img
+              src="images/interior.avif"
+              alt="Interiör i Ineos Grenadier med reglage"
+            />
+          </a>
+          <h2>
+            <a href="artikel.html?id=inredning" class="card-link">Inredning</a>
+          </h2>
+          <p>
+            En förarmiljö utformad som en cockpit med rejäla, analoga knappar
+            som går att manövrera även med handskar på. Tåliga material som tål
+            smuts och stänk – enkel att rengöra efter en dag ute i fält.
+          </p>
+        </div>
+
+        <!-- Kort 2: Prestanda -->
+        <div class="card">
+          <a href="artikel.html?id=prestanda">
+            <img
+              src="images/preformance.webp"
+              alt="Närbild på motor och prestanda i Ineos Grenadier"
+            />
+          </a>
+          <h2>
+            <a href="artikel.html?id=prestanda" class="card-link">Prestanda</a>
+          </h2>
+          <p>
+            Under motorhuven sitter BMW:s raka sexcylindriga 3.0-liters motorer
+            (bensin eller diesel) sammankopplade med en 8-stegad
+            automatväxellåda från ZF. En drivlina som kombinerar råstyrka med
+            smidig och pålitlig gång.
+          </p>
+        </div>
+
+        <!-- Kort 3: Drivlina -->
+        <div class="card">
+          <a href="artikel.html?id=drivlina">
+            <img
+              src="images/drivechain.jpg"
+              alt="Ineos Grenadier chassi och drivlina"
+            />
+          </a>
+          <h2>
+            <a href="artikel.html?id=drivlina" class="card-link">Drivlina</a>
+          </h2>
+          <p>
+            Byggd från grunden med en helsvetsad stålram, stela axlar och
+            mekaniska differentialspärrar. Grenadier är konstruerad för maximal
+            hållbarhet, hög markfrigång och en enastående dragvikt på 3,5 ton.
+          </p>
+        </div>
+      </section>
+
+      <!-- Kontaktformulär -->
+      <section id="kontakt" class="contact-container">
+        <h2>Boka provkörning / Kontakta oss</h2>
+
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Skriv in ditt namn här"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-postadress</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="din.epost@domän.se"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Meddelande</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Vad vill du fråga eller boka?"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Skicka meddelande</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 Ineos Grenadier. Skolarbete.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
